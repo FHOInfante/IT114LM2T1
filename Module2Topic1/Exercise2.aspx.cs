@@ -13,5 +13,21 @@ namespace Module1Exercise1
         {
 
         }
+
+        protected void UploadProof_Click(object sender, EventArgs e)
+        {
+            if (FileUpload.HasFile)
+            {
+                string fileExtension = System.IO.Path.GetExtension(FileUpload.FileName).ToLower();
+                if (fileExtension == ".jpg" || fileExtension == ".png")
+                {
+                    ResponseLabel.Text = "File has been sent to proofing!";
+                }
+                else
+                {
+                    ResponseLabel.Text = "Invalid file type. Please upload a JPG or PNG file.";
+                }
+            }
+        }
     }
 }

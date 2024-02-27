@@ -1,0 +1,78 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Module2Topic1.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <style>
+        body{
+            margin-top: 70px;
+            margin-left: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav{
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+            width: 100%;
+            position: absolute;
+            top: 0;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        li{
+            margin: 0;
+            padding: 0;
+        }
+
+        a{
+            font-family:Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            position: fixed;
+            width: 100%;
+            padding 10px;
+            bottom: 0;
+            box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <nav>
+            <ul>
+                <li><a href="/Exercise1.aspx">Exercise 1</a></li>
+                <li><a href="/Exercise2.aspx">Exercise 2</a></li>
+                <li><a href="/Exercise3.aspx">Exercise 3</a></li>
+                <li><a href="/Exercise4.aspx">Exercise 4</a></li>
+                <li><a href="/Exercise5.aspx">Exercise 5</a></li>
+            </ul>
+        </nav>
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <footer>
+            Copyright Francis Homer Infante 2024
+        </footer>
+    </form>
+</body>
+</html>

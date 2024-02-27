@@ -5,18 +5,17 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Module1Exercise1
+namespace Module2Topic1
 {
-    public partial class Exercise1 : System.Web.UI.Page
+    public partial class Default : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
-
         protected void PlayButton_Click(object sender, EventArgs e)
         {
-            if(NowPlayingLabel.Visible == true)
+            if (NowPlayingLabel.Visible == true)
             {
                 NowPlayingLabel.Text = "Already Playing";
             }

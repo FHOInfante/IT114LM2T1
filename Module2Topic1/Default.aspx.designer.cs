@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Module1Exercise1
+namespace Module2Topic1
 {
 
 
-    public partial class Exercise1
+    public partial class Default
     {
 
         /// <summary>

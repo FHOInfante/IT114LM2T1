@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" CodeBehind="~/Exercise1.aspx.cs" Inherits="Module1Exercise1.Exercise1" MasterPageFile="~/Site1.Master"%>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Module2Topic1.Default" MasterPageFile="~/Site1.Master"%>
 
 <%-- Exercise 1: Exploring Basic Controls of ASP.NET WebForms--%>
 <%-- Useful References: https://www.tutorialspoint.com/asp.net/index.htm --%>
